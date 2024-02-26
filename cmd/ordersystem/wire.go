@@ -37,6 +37,7 @@ func NewCreateOrderUseCase(db *sql.DB, eventDispatcher events.EventDispatcherInt
 		setOrderRepositoryDependency,
 		setOrderCreatedEvent,
 		usecase.NewCreateOrderUseCase,
+		usecase.NewListOrdersUseCase,
 	)
 	return &usecase.CreateOrderUseCase{}
 }
